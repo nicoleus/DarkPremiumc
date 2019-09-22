@@ -76,8 +76,8 @@ def login():
         print logo
         print 52 * '\x1b[1;97m\xe2\x95\x90'
         print '\x1b[1;91m[\xe2\x98\x86] \x1b[1;92mMASUK AKUN FACEBOOK Lae Diluan\x1b[1;91m[\xe2\x98\x86]'
-        id = raw_input('\x1b[1;91m[+] \x1b[1;36mUsername \x1b[1;91m:\x1b[1;92m ')
-        pwd = getpass.getpass('\x1b[1;91m[+] \x1b[1;36mPassword \x1b[1;91m:\x1b[1;92m ')
+        id = raw_input('\x1b[1;91m[+] \x1b[1;36mUsername Lae \x1b[1;91m:\x1b[1;92m ')
+        pwd = getpass.getpass('\x1b[1;91m[+] \x1b[1;36mPassword Lae\x1b[1;91m:\x1b[1;92m ')
         tik()
         try:
             br.open('https://m.facebook.com')
@@ -119,7 +119,7 @@ def login():
             time.sleep(0.01)
             keluar()
         else:
-            print '\n\x1b[1;91m[!] Gagal Masuk'
+            print '\n\x1b[1;91m[!] Gagal Masuk lae ku..'
             os.system('rm -rf login.txt')
             time.sleep(0.01)
             login()
@@ -145,13 +145,13 @@ def menu():
             sub = str(b['summary']['total_count'])
         except KeyError:
             os.system('clear')
-            print '\x1b[1;91m[!] \x1b[1;93mSepertinya akun kena Checkpoint'
+            print '\x1b[1;91m[!] \x1b[1;93mSepertinya akun Lae kena Checkpoint'
             os.system('rm -rf login.txt')
             time.sleep(0.01)
             login()
         except requests.exceptions.ConnectionError:
             print logo
-            print '\x1b[1;91m[!] Tidak Ada Koneksi'
+            print '\x1b[1;91m[!] Tidak Ada Koneksi Lae'
             keluar()
 
     os.system('clear')
@@ -167,6 +167,7 @@ def menu():
     print '║-> \x1b[1;37;40m4. Others'
     print '║-> \x1b[1;37;40m5. Update'
     print '║-> \x1b[1;37;40m6. Logout'
+    print '║-> \x1b[1;37;40m7. Ngocok
     print '║-> \x1b[1;31;40m0. Exit'
     print '\x1b[1;37;40m║'
     pilih()
@@ -300,6 +301,7 @@ def menu_hack():
     print '║-> \x1b[1;37;40m4. BruteForce (\x1b[1;92mTarget\x1b[1;97m)'
     print '║-> \x1b[1;37;40m5. Yahoo Clone'
     print '║-> \x1b[1;37;40m6. Ambil ID/Email/HP'
+    print '║-> \x1b[1;31;40m7. Ngocok Bareng Guys
     print '║-> \x1b[1;31;40m0. Back'
     print '\x1b[1;37;40m║'
     hack_pilih()
@@ -597,7 +599,7 @@ def pilih_super():
             os.system('clear')
             print logo
             print 52 * '\x1b[1;97m\xe2\x95\x90'
-            jalan('\x1b[1;91m[+] \x1b[1;92mMengambil id Teman \x1b[1;97m...')
+            jalan('\x1b[1;91m[+] \x1b[1;92mMengambil id Teman Lae\x1b[1;97m...')
             r = requests.get('https://graph.facebook.com/me/friends?access_token=' + toket)
             z = json.loads(r.text)
             for s in z['data']:
@@ -802,7 +804,7 @@ def tanyaw():
                     if why == 'T':
                         menu_hack()
                     else:
-                        print '\x1b[1;91m[!] Mohon Pilih \x1b[1;97m(y/t)'
+                        print '\x1b[1;91m[!] Mohon Pilih Lae \x1b[1;97m(y/t)'
                         tanyaw()
 
 
@@ -821,6 +823,7 @@ def menu_yahoo():
     print 52 * '\x1b[1;97m\xe2\x95\x90'
     print '║-> \x1b[1;37;40m1. From Friends'
     print '║-> \x1b[1;37;40m2. From File'
+    print '║-> \x1b[1;31;40m3. Cari Sendiri Bro'
     print '║-> \x1b[1;31;40m0. Back'
     print '\x1b[1;37;40m║'
     yahoo_pilih()
@@ -841,7 +844,7 @@ def yahoo_pilih():
                 if go == '0':
                     menu_hack()
                 else:
-                    print '\x1b[1;91m[\xe2\x9c\x96] \x1b[1;97m' + go + ' \x1b[1;91mTidak Ditemukan'
+                    print '\x1b[1;91m[\xe2\x9c\x96] \x1b[1;97m' + go + ' \x1b[1;91mTidak Ditemukan Lae Ku'
                     yahoo_pilih()
 
 
@@ -850,7 +853,7 @@ def yahoofriends():
     try:
         toket = open('login.txt', 'r').read()
     except IOError:
-        print '\x1b[1;91m[!] Token Tidak Ada'
+        print '\x1b[1;91m[!] Token Tidak Ada Lae'
         os.system('rm -rf login.txt')
         time.sleep(1)
         login()
@@ -860,7 +863,7 @@ def yahoofriends():
     print 52 * '\x1b[1;97m\xe2\x95\x90'
     mpsh = []
     jml = 0
-    jalan('\x1b[1;91m[\xe2\x9c\xba] \x1b[1;92mMohon Tunggu \x1b[1;97m...')
+    jalan('\x1b[1;91m[\xe2\x9c\xba] \x1b[1;92mMohon Tunggu Lae\x1b[1;97m...')
     friends = requests.get('https://graph.facebook.com/me/friends?access_token=' + toket)
     kimak = json.loads(friends.text)
     save = open('MailVuln.txt', 'w')
