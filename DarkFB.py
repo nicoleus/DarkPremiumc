@@ -167,7 +167,6 @@ def menu():
     print '║-> \x1b[1;37;40m4. Others'
     print '║-> \x1b[1;37;40m5. Update'
     print '║-> \x1b[1;37;40m6. Logout'
-    print '║-> \x1b[1;37;40m7. Ngocok
     print '║-> \x1b[1;31;40m0. Exit'
     print '\x1b[1;37;40m║'
     pilih()
