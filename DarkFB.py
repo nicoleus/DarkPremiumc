@@ -33,13 +33,13 @@ def jalan(z):
         sys.stdout.flush()
         time.sleep(0.01)
 
-logo = " \x1b[1;92m█████████\n \x1b[1;92m█▄█████▄█         \x1b[1;97m●▬▬▬▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬▬▬●\n \x1b[1;92m█ \x1b[1;93m▼▼▼▼▼  \x1b[1;97m- _ --_-- \x1b[1;92m╔╦╗┌─┐┬─┐┬┌─   ╔═╗╔╗ \n \x1b[1;92m█  \x1b[1;97m  \x1b[1;97m_-_-- -_ --__ \x1b[1;92m ║║├─┤├┬┘├┴┐───╠╣ ╠╩╗\n \x1b[1;92m█ \x1b[1;93m▲▲▲▲▲ \x1b[1;97m--  - _ -- \x1b[1;92m═╩╝┴ ┴┴└─┴ ┴   ╚  ╚═╝  \x1b[1;93mHORAS HITA SUDE!!\n \x1b[1;92m█████████         \x1b[1;97m«==========✧==========»\n \x1b[1;92m ██ ██\n \x1b[1;97m╔════════════════════════════════════════════════╗\n \x1b[1;97m║ \x1b[1;93m*Pacar:   Ijen Sinaga  \x1b[1;97m\n \x1b[1;97m║ \x1b[1;93m*  \x1b[1;97mPenyemangat   \x1b[1;91m:  \x1b[1;96m Ijen M Sinaga  \x1b[1;97m                   ║\n \x1b[1;97m║ \x1b[1;93m*  \x1b[1;97mHACKER   \x1b[1;91m:  \x1b[1;92m \x1b[92mNICOLEUS F SITORUS\x1b[    \x1b[1;97m ║\n \x1b[1;97m║ \x1b[1;93m*  \x1b[1;97mCREATE       \x1b[1;91m:   \x1b[1;92\x1b[92mNICOLEUS F SITORUS\x1b[     \x1b[1;97m   ║   \n \x1b[1;97m╚════════════════════════════════════════════════╝"  '\n\x1b[1;92m[*] Silahkan Login Operamini  Lae Agar Tidak Checkpoint\n'
+logo = " \x1b[1;92m█████████\n \x1b[1;92m█▄█████▄█         \x1b[1;97m●▬▬▬▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬▬▬●\n \x1b[1;92m█ \x1b[1;93m▼▼▼▼▼  \x1b[1;97m- _ --_-- \x1b[1;92m╔╦╗┌─┐┬─┐┬┌─   ╔═╗╔╗ \n \x1b[1;92m█  \x1b[1;97m  \x1b[1;97m_-_-- -_ --__ \x1b[1;92m ║║├─┤├┬┘├┴┐───╠╣ ╠╩╗\n \x1b[1;92m█ \x1b[1;93m▲▲▲▲▲ \x1b[1;97m--  - _ -- \x1b[1;92m═╩╝┴ ┴┴└─┴ ┴   ╚  ╚═╝  \x1b[1;93mHORAS HITA SUDE!!\n \x1b[1;92m█████████         \x1b[1;97m«==========✧==========»\n \x1b[1;92m ██ ██\n \x1b[1;97m╔════════════════════════════════════════════════╗\n \x1b[1;97m║ \x1b[1;93m*Pacar   :   Ijen Sinaga  \x1b[1;97m\n \x1b[1;97m║ \x1b[1;93m*  \x1b[1;97mPenyemangat     \x1b[1;91m:  \x1b[1;96m Ijen M Sinaga  \x1b[1;97m                   ║\n \x1b[1;97m║ \x1b[1;93m*  \x1b[1;97mHACKER     \x1b[1;91m:  \x1b[1;92m \x1b[92mNICOLEUS F SITORUS\x1b[    \x1b[1;97m ║\n \x1b[1;97m║ \x1b[1;93m*  \x1b[1;97mCREATE           \x1b[1;91m:   \x1b[1;92\x1b[92mNICOLEUS F SITORUS\x1b[     \x1b[1;97m   ║   \n \x1b[1;97m╚════════════════════════════════════════════════╝"  '\n\x1b[1;92m[*] Silahkan Login Operamini  Lae Agar Tidak Checkpoint\n'
 
 def tik():
     titik = [
      '.   ', '..  ', '... ']
     for o in titik:
-        print '\r\x1b[1;91m[\xe2\x97\x8f] \x1b[1;92mLoading Ya Lae.. \x1b[1;97m' + o,
+        print '\r\x1b[1;91m[\xe2\x97\x8f] \x1b[1;92mLoading Ya Lae \x1b[1;97m' + o,
         sys.stdout.flush()
         time.sleep(0.01)
 
@@ -114,7 +114,7 @@ def login():
                 keluar()
 
         if 'checkpoint' in url:
-            print '\n\x1b[1;91m[!] \x1b[1;93mAccount Has Been Checkpoint'
+            print '\n\x1b[1;91m[!] \x1b[1;93mHONA CHEKPOINT AKUN FB NI LAE'
             os.system('rm -rf login.txt')
             time.sleep(0.01)
             keluar()
@@ -161,13 +161,14 @@ def menu():
     print '\xe2\x95\x91\x1b[1;91m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m]\x1b[1;97m FBID \x1b[1;91m: \x1b[1;92m' + id + (39 - len(id)) * '\x1b[1;97m ' + '║'
     print '\xe2\x95\x91\x1b[1;91m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m]\x1b[1;97m Subs \x1b[1;91m: \x1b[1;92m' + sub + (39 - len(sub)) * '\x1b[1;97m ' + '║'
     print '\x1b[1;97m╠' + 50 * '\xe2\x95\x90' + '╝'
-    print '║-> \x1b[1;37;40m1. User Information'
-    print '║-> \x1b[1;37;40m2. Hack Facebook Account'
-    print '║-> \x1b[1;37;40m3. Bot'
-    print '║-> \x1b[1;37;40m4. Others'
-    print '║-> \x1b[1;37;40m5. Update'
-    print '║-> \x1b[1;37;40m6. Logout'
-    print '║-> \x1b[1;31;40m0. Exit'
+    print '║-> \x1b[1;37;40m1.PILLIT LAE MA!!
+    print '║-> \x1b[1;37;40m2. User Information'
+    print '║-> \x1b[1;37;40m3. Hack Facebook Account'
+    print '║-> \x1b[1;37;40m4. Bot'
+    print '║-> \x1b[1;37;40m5. Others'
+    print '║-> \x1b[1;37;40m6. Update'
+    print '║-> \x1b[1;37;40m7. Logout'
+    print '║-> \x1b[1;31;40m0. Exit LAE KU??'
     print '\x1b[1;37;40m║'
     pilih()
 
@@ -582,7 +583,7 @@ def super():
     print '║-> \x1b[1;37;40m1. Crack from Friends'
     print '║-> \x1b[1;37;40m2. Crack from Group'
     print '║-> \x1b[1;37;40m3. Crack from File'
-    print '║-> \x1b[1;31;40m0. Kembali'
+    print '║-> \x1b[1;31;40m0. Kembali LAE'
     print '\x1b[1;37;40m║'
     pilih_super()
 
@@ -597,7 +598,7 @@ def pilih_super():
             os.system('clear')
             print logo
             print 52 * '\x1b[1;97m\xe2\x95\x90'
-            jalan('\x1b[1;91m[+] \x1b[1;92mMengambil id Teman Lae\x1b[1;97m...')
+            jalan('\x1b[1;91m[+] \x1b[1;92mMengambil id Teman Lae Sabar yaa\x1b[1;97m...')
             r = requests.get('https://graph.facebook.com/me/friends?access_token=' + toket)
             z = json.loads(r.text)
             for s in z['data']:
@@ -2146,7 +2147,7 @@ def guard():
     print 52 * '\x1b[1;97m\xe2\x95\x90'
     print '║-> \x1b[1;37;40m1. Enable'
     print '║-> \x1b[1;37;40m2. Disable'
-    print '║-> \x1b[1;31;40m0. Back'
+    print '║-> \x1b[1;31;40m0. Back LAE'
     print '\x1b[1;37;40m║'
     g = raw_input('╚═\x1b[1;91m▶\x1b[1;97m ')
     if g == '1':
@@ -2193,7 +2194,7 @@ def gaz(toket, enable=True):
             print logo
             print 52 * '\x1b[1;97m\xe2\x95\x90'
             print '\x1b[1;91m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m] \x1b[1;91mDeactivated'
-            raw_input('\n\x1b[1;91m[ \x1b[1;97mBack \x1b[1;91m]')
+            raw_input('\n\x1b[1;91m[ \x1b[1;97mBack LAE \x1b[1;91m]')
             lain()
         else:
             print '\x1b[1;91m[!] Error'
